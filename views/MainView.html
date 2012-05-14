@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<script src="js/jquery/jquery-1.4.4.min.js" type="text/javascript"></script>
+<script src="js/jquery/jquery-ui-1.8.9.custom.min.js" type="text/javascript"></script>
+<script src="js/jquery/jquery.ui.datepicker-de.js" type="text/javascript"></script>
+<script src="js/highcharts/highcharts.js" type="text/javascript"></script>
+<script src="js/highcharts/modules/exporting.src.js" type="text/javascript"></script>
+<script src="js/dataTables/jquery.dataTables.min.js" type="text/javascript"></script>
+<script src="js/multiselect/ui.multiselect.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="css/jquery-overcast/jquery-ui-1.8.9.custom.css">
+<link rel="stylesheet" href="css/jquery-multiselect.css">
+
+
+<!-- evil google code! -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20801716-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+
+<title>SunShine</title>
+<!-- (en) Add your meta data here -->
+<!-- (de) Fuegen Sie hier ihre Meta-Daten ein -->
+<link href="css/layout_grids.css" rel="stylesheet" type="text/css"/>
+<!--[if lte IE 7]>
+<link href="css/patches/patch_grids.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+</head>
+<body>
+<!-- skip link navigation -->
+<ul id="skiplinks">
+	<li><a class="skip" href="#nav">Skip to navigation (Press Enter).</a></li>
+	<li><a class="skip" href="#main" >Skip to main content (Press Enter).</a></li>
+</ul>
+<!--
+  <div id="topnav" role="contentinfo">
+    <div class="page_margins">
+      <div class="page">
+        <span class="navlinks">
+  			<a href="#">Login</a> | <a href="#">Contact</a> | <a href="#">Imprint</a>
+        </span>
+        This is the perfect place for a secondary webpage title
+      </div>
+    </div>
+  </div>
+-->
+<!--
+  <div id="nav" role="navigation">
+    <div class="page_margins">
+      <div class="page">
+        <div class="hlist">
+-->
+          <!-- main navigation: #nav_main -->
+<!--
+          <ul>
+            <li><a href="../index.html">Table Of Contents <span>short desc</span></a>            </li>
+            <li><a href="../08_special_interest/3col_fullheight.html">Next Example <span>short desc</span></a></li>
+            <li><a href="fullpage_3col.html">Previous Example <span>short desc</span></a></li>
+            <li><a href="#">Button 4<span>short desc</span></a></li>
+            <li><a href="#">Button 5<span>short desc</span></a></li>
+            <li class="active"><strong>Active Button<span>short desc</span></strong></li>
+            <li><a href="#">Button 7<span>short desc</span></a></li>
+            <li class="last" ><a href="#">Button 8<span>short desc</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+-->
+  <div id="header" role="banner">
+    <div class="page_margins">
+      <div class="page">
+    <h1>SunShine</h1>
+    <span>Datenerfassung von Photovoltaikanlagen</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="main">
+    <div class="page_margins">
+      <div class="page">
+        <div class="subcolumns">
+          <div class="c75r">
+            <div class="subcr">
+              <!-- Insert your subtemplate content here -->
+              <? $this->render_subview("CONTENT") ?>
+            </div>
+          </div>
+          <div class="c25l">
+            <div class="subcl">
+              <!-- Insert your subtemplate content here -->
+              <div>
+              <h6 class="vlist">Menü</h6>
+              <? $this->render_subview("MENU") ?>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="extended">
+    <div class="page_margins">
+      <div class="page">
+        <div class="subcolumns equalize">
+          <div class="c25l">
+            <div class="subcl">
+              <? $this->render_subview("LEFT_BOX") ?>
+            </div>
+          </div>
+          <div class="c50l">
+            <div class="subc">
+              <? //$this->render_subview("MIDDLE_BOX") ?>
+              <h2>Sie haben auch eine Photovoltaikanlage mit Sitop Wechselrichter und wüssten gern mehr über ihre Stromerzeugung?</h2>
+              <h3>Dann schreiben sie mich an. Ich habe noch 3 Datenerfasser auf Lager.</h3>
+            </div>
+          </div>
+          <div class="c25r">
+            <div class="subcr">
+              <? //$this->render_subview("RIGHT_BOX") ?>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- begin: #footer -->
+  <div id="footer" role="contentinfo">
+    <div class="page_margins">
+      <div class="page">
+        <p>Copyright 2008 - 2011 by Franz Gregor</p>
+        <div id="foot_links">
+          <a target="new" href="http://www.yaml.de">
+            <img class="gray" alt="YAML" src="images/footer/yaml_gray.gif"  />
+            <img class="color" alt="YAML" src="images/footer/yaml_color.gif" />
+          </a>
+          <a target="new" href="http://www.sn.schule.de">
+            <img class="gray" alt="Sächsischer Bildungsserver" src="images/footer/sbs_gray.gif"  />
+            <img class="color" alt="Sächsischer Bildungsserver" src="images/footer/sbs_color.gif" />
+          </a>
+          <a target="new" href="http://www.php.net">
+            <img class="gray" alt="PHP" src="images/footer/php_gray.gif"  />
+            <img class="color" alt="PHP" src="images/footer/php_color.gif" />
+          </a>
+          <a target="new" href="http://www.python.org">
+            <img class="gray" alt="Python" src="images/footer/python_gray.gif"  />
+            <img class="color" alt="Python" src="images/footer/python_color.gif" />
+          </a>
+          <a target="new" href="http://www.djangoproject.com">
+            <img class="gray" alt="Django" src="images/footer/django_gray.gif"  />
+            <img class="color" alt="Django" src="images/footer/django_color.gif" />
+          </a>
+          <a target="new" href="http://www.pcengines.ch">
+            <img class="gray" alt="PC Engines" src="images/footer/pc_engines_gray.gif"  />
+            <img class="color" alt="PC Engines" src="images/footer/pc_engines_color.gif" />
+          </a>
+          <a target="new" href="http://linux.voyage.hk/">
+            <img class="gray" alt="Voyage Linux" src="images/footer/voyage.gif"  />
+            <img class="color" alt="Voyage Linux" src="images/footer/voyage.gif" />
+          </a>
+          <a target="new" href="http://www.sqlite.org">
+            <img class="gray" alt="SQlite" src="images/footer/sqlite_gray.gif"  />
+            <img class="color" alt="SQlite" src="images/footer/sqlite_color.gif" />
+          </a>
+          <a target="new" href="http://www.mysql.de">
+            <img class="gray" alt="MySQL" src="images/footer/mysql_gray.gif"  />
+            <img class="color" alt="MySQL" src="images/footer/mysql_color.gif" />
+          </a>
+          <a target="new" href="http://www.jquery.com">
+            <img class="gray" alt="jQuery" src="images/footer/jquery_gray.gif"  />
+            <img class="color" alt="jQuery" src="images/footer/jquery_color.gif" />
+          </a>
+          <a target="new" href="http://www.datatables.net">
+            <img class="gray" alt="DataTables" src="images/footer/datatables_gray.gif"  />
+            <img class="color" alt="DataTables" src="images/footer/datatables_color.gif" />
+          </a>
+          <a target="new" href="http://www.highcharts.com">
+            <img class="gray" alt="Highcharts" src="images/footer/highcharts_gray.gif"  />
+            <img class="color" alt="Highcharts" src="images/footer/highcharts_color.gif" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- full skiplink functionality in webkit browsers -->
+<script src="yaml/core/js/yaml-focusfix.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<?php
+// set databaseconnection
+try{
+    $db = new MySQLDatabase(HOST, USER, PASSWORD, DATABASE);
+} catch (Exception $e){
+    //throw new Exception("problem while establishing database connection");
+}
+//$db = new SQlite2Database("test.new.db");
+// set debug mode
+$db->debug = false;
+Model::setDB($db);
+// set maesurement raw backup
+Measurement::$backupRaw = true;
+
+?>
