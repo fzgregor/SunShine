@@ -15,7 +15,7 @@ $html .= "<p>Rechnen Sie einfach das Ergebnis der kleinen Matheaufgabe aus und S
 $show = isset($_POST['entered']) && isset($_POST['code']) ? codeFor($_POST['entered']) == $_POST['code'] : false;
 
 if ($show){
-    $html .= "<p>Franz Gregor</br>Weinbergstraße 69</br>01129 Dresden</p><p>_Franz_._Gregor_@mailbox.tu-dresden.de (ohne die Unterstriche)</p>";
+    $html .= "<p>Franz Gregor</br>Weinbergstraße 69</br>01129 Dresden</br>rentafranzATgooglemailPUNKTcom</p>";
 } else {
     $a = rand(0, 10);
     $b = rand(0, 10);

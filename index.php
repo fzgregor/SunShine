@@ -5,15 +5,12 @@ initialise();
 
 $view = new View("MainView.html");
 $html = "
-<h1>Herzlich Willkommen auf der neuen Seite von ~solar</h1>
-<p>Diese Seite (<a href=\"www.sn.schule.de/~solar/SunShine\">www.sn.schule.de/~solar/SunShine</a>) soll die alter Seite unter <a href=\"www.sn.schule.de/~solar\">www.sn.schule.de/~solar</a> in naher Zukunft ablösen.</p>
+<h1>Herzlich Willkommen auf SunShine</h1>
+<p>Auf dieser Seite finden sie Informationen über mein Projekt zur Datenerfassung von Photovoltaikanlagen. Sowie die aktuellen Daten der Anlage(n).</p>
+<p><strong>Sie sind Besitzer einer Photovoltaikanalage von Siemens Marke Sitop?</strong></p>
+<p>Schreiben Sie mir doch eine Mail, ich habe noch 3 Datenlogger günstig(gratis) abzugeben.</p>
 <p><strong>Wenn ihnen Fehler auffallen oder sie Verbessungsvorschläge haben, melden sie sich doch bitte bei mir unter rentafranzATgmailPUNKTcom. Danke im Vorraus.</strong></p>
-<p>TODO:</p>
-<ul>
-	<li>jQuery, Highcharts and DataTables to footer <i>DONE</i></li>
-    <li>Better DataTables logo</li>
-</ul>";
-
+";
 $view->fill_subview_with_html("CONTENT", $html);
 $view->render();
 ?>
