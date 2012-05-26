@@ -1,11 +1,11 @@
 <?php
 require_once 'page.php';
 
-$start = $_GET['start'];
+$start = $_GET['start_row'];
 
-$all_rows = $db->query("select * from xld_1 limit $start,10000;");
+$all_rows = $db->query("select * from xld_1 order by ID limit $start,20000;");
 
-$_POST['SESSION'] = 'klyxun';
+$_POST['SESSION'] = 'afz4ih';
 $_POST['ACCOUNT'] = 'test';
 $_POST['WAY'] = 2;
 
