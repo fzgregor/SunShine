@@ -47,7 +47,7 @@ switch(isset($_POST["WAY"]) ? $_POST["WAY"] : 4){
         		print ("O: Uploaded;\n");
 	        	$session->upload_count += 1;
 	        	$session->save();
-        		exit();
+        		//exit();
         	} catch (ModelException $e){
         		switch ($e->getCode()) {
         			case 1:
@@ -58,7 +58,8 @@ switch(isset($_POST["WAY"]) ? $_POST["WAY"] : 4){
         				exit();
         			case 3:
         				print ("D: Duplicated;\n");
-        				exit();
+        				//exit();
+					break;
         			default:
         				throw $e;
         		}
