@@ -81,7 +81,11 @@ class Plant extends Model{
                 plant = $this->id AND 
 				day.day + measurement.time >= $start AND
 				day.day + measurement.time < $end;");
-        return round($actual/$target*100, 2);
+                if ($target > 0) {
+                        return round($actual/$target*100, 2);
+                } else {
+                        return 0;
+                }
 	}
 	
 	function getPowerToday(){
