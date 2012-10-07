@@ -11,6 +11,6 @@ MeasurementRaw::createIfNecessary();
 Measurement::createIfNecessary();
 QuarterHoursOfTheDay::createIfNecessary();
 
-// create days until two years from this year TODO
-Day::createDays(strtotime("01.01.2012"));
+// create days until 01.01.2015
+Day::createDays(strtotime("01.01.2015"));
 ?>
